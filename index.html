@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
+    <meta
+      name="description"
+      content="Aninda Sarker Rahul - Senior Software Engineer specializing in AI & Agentic Systems, Go, NestJS, Python, Kubernetes & Event-Driven Architecture."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -15,23 +18,33 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Aninda Sarker Rahul</title>
+    <title>Aninda Sarker Rahul | Senior Software Engineer</title>
   </head>
   <body class="light" id="top">
     <header class="header center">
       <h3>
-        <a href="https://github.com/Rahul108" class="link"
-          >Aninda RS</a
-        >
+        <a href="#top" class="link brand">
+          <span class="logo-mark">AR</span>
+          <span class="brand-name">Aninda S. Rahul</span>
+        </a>
       </h3>
 
       <nav class="nav center">
         <ul class="nav__list center">
           <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
+            <a class="link link--nav" href="#about">About</a>
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experience">Experience</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#certifications">Certifications</a>
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#contact">Contact</a>
@@ -54,53 +67,300 @@
 
     <main>
       <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Aninda Sarker Rahul</span></h1>
-        <h2 class="about__role">A Software Engineer.</h2>
-        <p class="about__desc">
-          I'm a Full Stack Developer, primarily work on backend. Currently working at Miaki
-        </p>
+      <section id="about" class="about">
+        <div class="about__container">
+          <div class="about__img-wrapper">
+            <img src="./assets/IMG_4800.jpg" alt="Aninda Sarker Rahul" class="about__img" />
+          </div>
 
-        <div class="about__contact center">
-          <a href="https://drive.google.com/file/d/1MZrrg1PS0JHyts2OAyz_Ur8BJP4aehIa/view?usp=sharing">
-            <span class="btn btn--outline">Resume</span>
-          </a>
+          <div class="about__content">
+            <h1>Hi, I am <span class="about__name">Aninda Sarker Rahul</span></h1>
+            <p class="about__desc">
+              Senior Full-Stack Software Engineer with 7+ years building and scaling microservices for fintech, telecom, and e-commerce. Expert in Go, NestJS, and Python (Django/FastAPI) with production mastery of Kubernetes, event-driven systems, and Redis optimization. Proficient in prompt-first workflows, RAG pipelines, and tool-calling AI agents.
+            </p>
 
-          <a
-            href="https://github.com/Rahul108"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
+            <div class="about__highlights">
+              <div class="highlight-badge"><i class="fas fa-brain"></i> AI & Agentic Systems</div>
+              <div class="highlight-badge"><i class="fas fa-chart-line"></i> Scalable Fintech</div>
+              <div class="highlight-badge"><i class="fas fa-network-wired"></i> Microservices & Event-Driven Architecture</div>
+              <div class="highlight-badge"><i class="fas fa-globe"></i> Remote-Ready (UTC+6)</div>
+            </div>
 
-          <a
-            href="https://www.linkedin.com/in/aninda-sarker/"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
+            <div class="about__contact center">
+              <a href="https://drive.google.com/file/d/1zplGe2Z0vNIUF9lbDoCMeJb6Fs-bdYL2/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                Resume
+              </a>
+
+              <a
+                href="https://github.com/Rahul108"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="github"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/aninda-sarker/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="linkedin"
+                class="link link--icon"
+              >
+                <i aria-hidden="true" class="fab fa-linkedin"></i>
+              </a>
+
+              <button
+                type="button"
+                aria-label="copy email"
+                class="link link--icon copy-email-btn"
+                data-email="rahul108sk@gmail.com"
+                title="Copy email to clipboard"
+              >
+                <i aria-hidden="true" class="fas fa-envelope"></i>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Projects -->
+      <!-- Skills (Prioritized First) -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills & Technologies</h2>
+        
+        <div class="skills__categories">
+          <div class="skills__category">
+            <h3 class="skills__category-title"><i class="fas fa-code"></i> Programming Languages</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">Go</li>
+              <li class="skills__list-item btn btn--plain">TypeScript</li>
+              <li class="skills__list-item btn btn--plain">Python</li>
+              <li class="skills__list-item btn btn--plain">JavaScript</li>
+              <li class="skills__list-item btn btn--plain">PHP</li>
+              <li class="skills__list-item btn btn--plain">C++</li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title"><i class="fas fa-layer-group"></i> Frameworks & Runtimes</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">NestJS</li>
+              <li class="skills__list-item btn btn--plain">Django</li>
+              <li class="skills__list-item btn btn--plain">FastAPI</li>
+              <li class="skills__list-item btn btn--plain">Flask</li>
+              <li class="skills__list-item btn btn--plain">React</li>
+              <li class="skills__list-item btn btn--plain">Next.js</li>
+              <li class="skills__list-item btn btn--plain">Fiber</li>
+              <li class="skills__list-item btn btn--plain">Chi</li>
+              <li class="skills__list-item btn btn--plain">Node.js</li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title"><i class="fas fa-brain"></i> AI & Agentic Systems</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">RAG Pipelines</li>
+              <li class="skills__list-item btn btn--plain">Tool-Calling Agents</li>
+              <li class="skills__list-item btn btn--plain">Prompt-First Dev</li>
+              <li class="skills__list-item btn btn--plain">GitHub Copilot</li>
+              <li class="skills__list-item btn btn--plain">Antigravity</li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title"><i class="fas fa-database"></i> Databases, Caching & Search</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">PostgreSQL</li>
+              <li class="skills__list-item btn btn--plain">MySQL</li>
+              <li class="skills__list-item btn btn--plain">MongoDB</li>
+              <li class="skills__list-item btn btn--plain">Redis (Advanced)</li>
+              <li class="skills__list-item btn btn--plain">Elasticsearch</li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title"><i class="fas fa-server"></i> Cloud, DevOps & Messaging</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">Kubernetes (K8s)</li>
+              <li class="skills__list-item btn btn--plain">Docker</li>
+              <li class="skills__list-item btn btn--plain">RabbitMQ</li>
+              <li class="skills__list-item btn btn--plain">Debezium</li>
+              <li class="skills__list-item btn btn--plain">Kafka</li>
+              <li class="skills__list-item btn btn--plain">AWS (EC2, S3, Lambda)</li>
+              <li class="skills__list-item btn btn--plain">Terraform</li>
+              <li class="skills__list-item btn btn--plain">Ansible</li>
+              <li class="skills__list-item btn btn--plain">GitHub Actions / GitLab CI</li>
+            </ul>
+          </div>
+
+          <div class="skills__category">
+            <h3 class="skills__category-title"><i class="fas fa-shield-alt"></i> Quality, Security & Observability</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">TDD</li>
+              <li class="skills__list-item btn btn--plain">Grafana & Prometheus</li>
+              <li class="skills__list-item btn btn--plain">ELK Stack & Sentry</li>
+              <li class="skills__list-item btn btn--plain">OWASP Penetration Testing</li>
+              <li class="skills__list-item btn btn--plain">Playwright & Appium</li>
+              <li class="skills__list-item btn btn--plain">Postman</li>
+              <li class="skills__list-item btn btn--plain">SonarQube</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Industrial Experience (Concise Major Points) -->
+      <section id="experience" class="section experience">
+        <h2 class="section__title">Industrial Experience</h2>
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3>Senior Software Engineer (Optimization Team)</h3>
+                <span class="timeline__company">Miaki Media Ltd (Augmented at Grameenphone)</span>
+                <span class="timeline__date">August 2024 – Present</span>
+              </div>
+              <ul class="timeline__bullet-list">
+                <li><strong>~80% Redis Memory Reduction:</strong> Optimized high-throughput recharge services handling millions of daily transactions.</li>
+                <li><strong>CDC ETL & Event Architecture:</strong> Implemented real-time change data capture using Debezium, RabbitMQ, and custom Go pipelines.</li>
+                <li><strong>System Modernization:</strong> Migrated legacy PHP microservices to high-performance Go and Node.js microservices with AI-assisted workflows.</li>
+              </ul>
+              <div class="timeline__stack">
+                <span class="tag">Go</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">Slim</span>
+                <span class="tag">Fiber</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Redis</span>
+                <span class="tag">RabbitMQ</span>
+                <span class="tag">Debezium/Kafka</span>
+                <span class="tag">Grafana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3>Software Engineer</h3>
+                <span class="timeline__company">ShopUp</span>
+                <span class="timeline__date">September 2022 – July 2024</span>
+              </div>
+              <ul class="timeline__bullet-list">
+                <li><strong>Expense Platform Redesign:</strong> Scaled expense management for 45+ business units & 1,000+ hubs (cut bugs by 40%, +50% speedup).</li>
+                <li><strong>Bulk Payment Engine & Approvals:</strong> Built background job module processing 20,000+ bulk transactions daily with dynamic approval flows.</li>
+              </ul>
+              <div class="timeline__stack">
+                <span class="tag">Go</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3>Software Engineer</h3>
+                <span class="timeline__company">Progoti Systems Limited (TallyKhata)</span>
+                <span class="timeline__date">December 2020 – July 2022</span>
+              </div>
+              <ul class="timeline__bullet-list">
+                <li><strong>TallyCredit Loan Platform:</strong> Designed database and backend services for Microcredit Loan Management System.</li>
+                <li><strong>Performance & Centralized Tracing:</strong> Created custom filter service across 1K+ data points (+60% speedup) and centralized Sentry error tracing.</li>
+              </ul>
+              <div class="timeline__stack">
+                <span class="tag">Python (Django, FastAPI)</span>
+                <span class="tag">Node.js (React)</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Sentry</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3>Software Engineer & QA Engineer</h3>
+                <span class="timeline__company">CodeMarshal IT Systems Ltd</span>
+                <span class="timeline__date">May 2019 – November 2020</span>
+              </div>
+              <ul class="timeline__bullet-list">
+                <li><strong>API Development & QA Automation:</strong> Built e-commerce REST APIs; automated Postman/Appium test suites integrated into CI/CD pipelines.</li>
+                <li><strong>OWASP Security:</strong> Conducted mobile penetration testing against OWASP security threats.</li>
+              </ul>
+              <div class="timeline__stack">
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Appium</span>
+                <span class="tag">MARA Framework</span>
+                <span class="tag">OWASP Security</span>
+                <span class="tag">GitLab CI/CD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline__item">
+            <div class="timeline__marker timeline__marker--edu"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3>B.Sc. in Computer Science and Engineering</h3>
+                <span class="timeline__company">Chittagong University of Engineering and Technology (CUET)</span>
+                <span class="timeline__date">March 2014 – March 2019</span>
+              </div>
+              <p class="timeline__location"><i class="fas fa-map-marker-alt"></i> Chittagong, Bangladesh</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
       <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
+        <h2 class="section__title">Featured Projects</h2>
 
         <div class="projects__grid">
           <div class="project">
-            <h3>Mess Management</h3>
+            <h3>debezium-rabbitmq-cdc</h3>
             <p class="project__description">
-              A set of Rest APIs to calculate cost per user and overall cost of a mess against several duration types (per year, month, week or custom duration).
+              Real-time Change Data Capture (CDC) system streaming MySQL database mutations to RabbitMQ queues via Debezium for event-driven microservices.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Django Rest</li>
-              <li class="project__stack-item">PostgreSQL</li>
+              <li class="project__stack-item">Go</li>
+              <li class="project__stack-item">Debezium</li>
+              <li class="project__stack-item">RabbitMQ</li>
+              <li class="project__stack-item">MySQL</li>
+              <li class="project__stack-item">Docker</li>
             </ul>
 
             <a
-              href="https://github.com/Rahul108/Mess-Management"
+              href="https://github.com/Rahul108/debezium-rabbitmq-cdc"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="source code"
               class="link link--icon"
             >
@@ -109,18 +369,108 @@
           </div>
 
           <div class="project">
-            <h3>Online Bookshop</h3>
+            <h3>calc-versa</h3>
             <p class="project__description">
-              A web application to sell and keep track of books on a shop. A CMS is included to modify the bookshop UI and keep track of the in‐stock and
-      out‐of‐stock books.
+              Versatile calculation and conversion web tool engineered for fast, modular, and dynamic computations.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Laravel</li>
-              <li class="project__stack-item">MySQL</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">JavaScript</li>
             </ul>
 
             <a
-              href="https://github.com/Rahul108/Online-Bookshop"
+              href="https://github.com/Rahul108/calc-versa"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>remix-redux-tailwind-dnd-motion</h3>
+            <p class="project__description">
+              Interactive web app featuring Remix framework, Redux Toolkit state management, Tailwind CSS, drag-and-drop UI, and Framer Motion animations.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Remix</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Redux Toolkit</li>
+              <li class="project__stack-item">Tailwind CSS</li>
+              <li class="project__stack-item">Framer Motion</li>
+            </ul>
+
+            <a
+              href="https://github.com/Rahul108/remix-redux-tailwind-dnd-motion"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>High-Throughput Recharge & Refund System</h3>
+            <p class="project__description">
+              Scalable event-driven microservices handling millions of daily transactions at Grameenphone. Achieved ~80% Redis memory optimization and CDC with Debezium & RabbitMQ.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Go</li>
+              <li class="project__stack-item">NestJS</li>
+              <li class="project__stack-item">Redis</li>
+              <li class="project__stack-item">RabbitMQ</li>
+              <li class="project__stack-item">Debezium</li>
+              <li class="project__stack-item">K8s</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Configurable Expense & Tax Management</h3>
+            <p class="project__description">
+              Enterprise expense platform for 45+ business units and 1,000+ hubs at ShopUp. Reduced system bugs by 40%, boosted performance 50%, and bulk-processed 20K daily payment batches.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Go</li>
+              <li class="project__stack-item">NestJS</li>
+              <li class="project__stack-item">PostgreSQL</li>
+              <li class="project__stack-item">MySQL</li>
+              <li class="project__stack-item">Kubernetes</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Microcredit Loan Platform (TallyCredit)</h3>
+            <p class="project__description">
+              End-to-end loan credit management system with custom filter engine evaluating 1,000+ data points, boosting query performance by 60%.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Django</li>
+              <li class="project__stack-item">FastAPI</li>
+              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">PostgreSQL</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Mess Management System</h3>
+            <p class="project__description">
+              A set of REST APIs to calculate cost per user and overall expense of a mess against custom duration windows (annual, monthly, weekly, or dynamic periods).
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Django REST</li>
+              <li class="project__stack-item">PostgreSQL</li>
+            </ul>
+
+            <a
+              href="https://github.com/Rahul108/Mess-Management"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="source code"
               class="link link--icon"
             >
@@ -131,15 +481,17 @@
           <div class="project">
             <h3>Chill Xicz Discord Bot</h3>
             <p class="project__description">
-              A bot to notify about particular events regularly. Also it have some group chat entertainment feature for discord server
+              Automated event notification and community engagement bot for Discord servers with MongoDB state storage.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">discord.py</li>
-              <li class="project__stack-item">MongoDb</li>
+              <li class="project__stack-item">MongoDB</li>
             </ul>
 
             <a
               href="https://github.com/Rahul108/Chill-Xicz-Discord-Bot"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="source code"
               class="link link--icon"
             >
@@ -147,6 +499,8 @@
             </a>
             <a
               href="https://discord.gg/P86hT2tcb4"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="live preview"
               class="link link--icon"
             >
@@ -155,16 +509,19 @@
           </div>
 
           <div class="project">
-            <h3>Wormhole Attack Detection in Wireless Sensor Network</h3>
+            <h3>Online Bookshop CMS</h3>
             <p class="project__description">
-              The wormhole attack is recognized as one of the most dangerous security threats for WSNs. This attack has one or more malicious node and a tunnel between them. A detection mechanism is proposed with simulation
+              E-commerce platform for listing, selling, and tracking book inventory with custom CMS for dynamic UI updates and stock management.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">NS3</li>
+              <li class="project__stack-item">Laravel</li>
+              <li class="project__stack-item">MySQL</li>
             </ul>
 
             <a
-              href="https://github.com/Rahul108/Wormhole_attack_detection_in_wsn"
+              href="https://github.com/Rahul108/Online-Bookshop"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="source code"
               class="link link--icon"
             >
@@ -173,9 +530,30 @@
           </div>
 
           <div class="project">
-            <h3>Online Blood Bank Management System</h3>
+            <h3>Wormhole Attack Detection in WSN</h3>
             <p class="project__description">
-              This Project has been developed for searching blood online.
+              Security research project proposing & simulating detection mechanisms against wormhole attack tunnels in Wireless Sensor Networks.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">NS3</li>
+              <li class="project__stack-item">C++</li>
+            </ul>
+
+            <a
+              href="https://github.com/Rahul108/Wormhole_attack_detection_in_wsn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Online Blood Bank System</h3>
+            <p class="project__description">
+              Web application developed for searching and connecting blood donors online quickly and effectively.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">Laravel</li>
@@ -184,6 +562,8 @@
 
             <a
               href="https://github.com/Rahul108/Online-Blood-Bank-Management-System"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="source code"
               class="link link--icon"
             >
@@ -194,74 +574,114 @@
           <div class="project">
             <h3>Hotel Management System</h3>
             <p class="project__description">
-              A database project for managing the daily services on hotel in online.
+              Database management project for handling hotel room bookings, guest billing, and daily service operations.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">MySQL</li>
               <li class="project__stack-item">PHP</li>
-              <li class="project__stack-item">HTML</li>
-              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">MySQL</li>
               <li class="project__stack-item">JavaScript</li>
             </ul>
 
             <a
               href="https://github.com/Rahul108/Online-Blood-Bank-Management-System"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="source code"
               class="link link--icon"
             >
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
           </div>
-
         </div>
       </section>
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">C++</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">Django</li>
-          <li class="skills__list-item btn btn--plain">NestJs</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
-          <li class="skills__list-item btn btn--plain">MySQL</li>
-          <li class="skills__list-item btn btn--plain">MongoDb</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Material UI</li>
-          <li class="skills__list-item btn btn--plain">Appium</li>
-          <li class="skills__list-item btn btn--plain">NightWatchJs</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
-        </ul>
+      <!-- Certifications -->
+      <section id="certifications" class="section certifications">
+        <h2 class="section__title">Certifications</h2>
+
+        <div class="certifications__grid">
+          <div class="certification-card">
+            <svg class="certification-card__icon" viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="10" r="6"></circle>
+              <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+            </svg>
+            <h3 class="certification-card__title">Mastering DevOps: From Fundamental to Advanced Practices</h3>
+            <a href="https://ostad.app/" target="_blank" rel="noopener noreferrer" class="certification-card__issuer">
+              <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i> Ostad
+            </a>
+            <p class="certification-card__desc">
+              Comprehensive certification covering end-to-end DevOps practices, CI/CD pipeline automation, infrastructure provisioning, container orchestration, Kubernetes, and cloud deployment standards.
+            </p>
+            <div class="certification-card__footer">
+              <a
+                href="https://drive.google.com/file/d/1OYh5zVAFOZsCk3yLEkH9cH0j6q_821nA/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--outline btn--sm"
+              >
+                <i class="fas fa-file-pdf" style="margin-right: 0.4em;"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Contact -->
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
-        <a href="rahul108sk@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
+        <p class="contact__subtitle">Let's connect! Reach out via email, phone, or find me on social platforms.</p>
+
+        <div class="contact__cards">
+          <div class="contact-card copy-email-card" data-email="rahul108sk@gmail.com" title="Click to copy email">
+            <i class="fas fa-envelope contact-card__icon"></i>
+            <span class="contact-card__label">Email (Click to Copy)</span>
+            <span class="contact-card__value">rahul108sk@gmail.com</span>
+          </div>
+
+          <a href="tel:+8801710465757" class="contact-card">
+            <i class="fas fa-phone-alt contact-card__icon"></i>
+            <span class="contact-card__label">Mobile</span>
+            <span class="contact-card__value">+8801710465757</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/aninda-sarker/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fab fa-linkedin contact-card__icon"></i>
+            <span class="contact-card__label">LinkedIn</span>
+            <span class="contact-card__value">in/aninda-sarker</span>
+          </a>
+
+          <a href="https://github.com/Rahul108" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <i class="fab fa-github contact-card__icon"></i>
+            <span class="contact-card__label">GitHub</span>
+            <span class="contact-card__value">github.com/Rahul108</span>
+          </a>
+
+          <div class="contact-card contact-card--static">
+            <i class="fas fa-map-marker-alt contact-card__icon"></i>
+            <span class="contact-card__label">Location</span>
+            <span class="contact-card__value">Dhaka, Bangladesh (UTC+6)</span>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn--outline copy-email-btn" data-email="rahul108sk@gmail.com" style="margin-top: 1.5em;">
+          <i class="fas fa-copy" style="margin-right: 0.4em;"></i> Copy Email
+        </button>
       </section>
     </main>
 
     <footer class="footer">
-      <a
-        href="https://github.com/rajshekhar26/cleanfolio-minimal"
-        class="link footer__link"
-      >
-      </a>
+      <p>&copy; 2026 Aninda Sarker Rahul. Built with passion & precision.</p>
     </footer>
 
     <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
+      <div class="scroll-top" title="Back to top">
+        <a aria-label="Scroll up to top" href="#top">
+          <span class="scroll-top-arrow"></span>
+        </a>
+      </div>
     </div>
-    </div>
+
+    <div id="toast" class="toast">Email copied to clipboard! ✓</div>
 
     <script src="./script.js"></script>
   </body>
