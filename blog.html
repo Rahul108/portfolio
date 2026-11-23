@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Brain Dump — Blog | Aninda Sarker Rahul</title>
+    <meta
+      name="description"
+      content="Brain Dump — notes by Aninda Sarker Rahul on backend systems, security, design patterns and performance."
+    />
+    <meta property="og:title" content="Brain Dump — Blog by Aninda Sarker Rahul" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%234f46e5'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>AR</text></svg>" />
+
+    <script>
+      (function () {
+        var t = localStorage.getItem('portfolio-theme')
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        }
+        document.documentElement.dataset.theme = t
+      })()
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body class="page-blog">
+    <a class="skip-link" href="#blog-app">Skip to content</a>
+    <div class="bg-decor" aria-hidden="true"></div>
+
+    <header class="nav-wrap">
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" class="brand" aria-label="Home">
+          <span class="brand__mark">AR</span>
+          <span class="brand__name">Aninda S. Rahul</span>
+        </a>
+
+        <ul class="nav__links" id="nav-links">
+          <li><a class="nav__link" href="index.html#about">About</a></li>
+          <li><a class="nav__link" href="index.html#experience">Experience</a></li>
+          <li><a class="nav__link" href="index.html#projects">Projects</a></li>
+          <li><a class="nav__link is-active" href="blog.html" aria-current="page">Blog</a></li>
+          <li><a class="nav__link" href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav__actions">
+          <button type="button" class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+            <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+          </button>
+          <a href="index.html#contact" class="btn btn--primary btn--sm nav__cta">Let's talk</a>
+          <button type="button" class="icon-btn nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <span class="burger" aria-hidden="true"><span></span><span></span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="blog-app" class="blog-main">
+      <noscript>
+        <p class="container" style="padding-top: 8rem">
+          The blog needs JavaScript. You can read the posts directly on
+          <a href="https://github.com/Rahul108/brain_dump">GitHub</a>.
+        </p>
+      </noscript>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>&copy; <span class="js-year">2026</span> Aninda Sarker Rahul. Posts live in <a href="https://github.com/Rahul108/brain_dump" target="_blank" rel="noopener noreferrer">Rahul108/brain_dump</a>.</p>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="index.html">Portfolio</a>
+          <a href="https://github.com/Rahul108" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/aninda-sarker/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </footer>
+
+    <button type="button" class="to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="./script.js"></script>
+    <script src="./blog.js"></script>
+  </body>
+</html>

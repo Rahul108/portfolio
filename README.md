@@ -3,9 +3,19 @@
 Personal developer portfolio website showcasing professional experience, technical skills, featured microservices & AI projects, certifications, and contact details.
 
 ## 🚀 Built With
-- **HTML5 & CSS3** (Vanilla CSS with custom properties & Dark/Light mode design system)
-- **JavaScript (ES6+)** (Theme switcher, mobile navigation, smooth scrolling, interactive clipboard copy)
-- **FontAwesome & Inline SVGs** (Clean developer icons & emblems)
+- **HTML5 & CSS3** — vanilla CSS with design tokens, light/dark themes (follows system preference), bento grid, glass nav
+- **JavaScript (ES2020+)** — theme switcher, mobile menu, scroll-spy, reveal animations, project filters, clipboard copy
+- **Font Awesome 6** (CDN) and **Geist** / **Noto Sans Bengali** fonts
+
+## ✍️ Blog (Brain Dump)
+`blog.html` renders Markdown posts straight from [Rahul108/brain_dump](https://github.com/Rahul108/brain_dump):
+
+- Any `.md` file in that repo is a post (except README/LICENSE). Its folder becomes the topic, its first `# heading` the title.
+- Publishing = pushing a Markdown file to brain_dump. No rebuild of this site needed.
+- Mermaid diagrams, code highlighting, tables, relative images/links and Bangla text are supported.
+- Post URLs look like `blog.html?p=under_the_hood/observer_pattern_and_nestJs`.
+- The post list is cached in the visitor's browser for 6 hours, so new posts can take that long to show for repeat visitors.
+- Repo/branch are configured at the top of `blog.js`.
 
 ## 📁 File Structure
 ```
@@ -14,10 +24,13 @@ portfolio/
 │   ├── IMG_4800.jpg                 # Hero profile picture
 │   ├── updated_cv_content.md        # CV reference content
 │   └── updated_github_profile_info.md
-├── index.html                       # Main portfolio markup
-├── styles.css                       # Design tokens, themes & component styles
-├── script.js                        # Theme persistence & interactive features
-└── README.md                        # Project documentation
+├── index.html                       # Portfolio page
+├── blog.html                        # Blog index + post reader
+├── styles.css                       # Design tokens, themes & components
+├── blog.css                         # Blog/article styles
+├── script.js                        # Shared interactions
+├── blog.js                          # Fetches & renders posts from brain_dump
+└── README.md
 ```
 
 ## 🛠️ Local Development
