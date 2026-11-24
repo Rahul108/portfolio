@@ -21,7 +21,7 @@ Personal developer portfolio website showcasing professional experience, technic
 ```
 portfolio/
 ├── assets/
-│   ├── IMG_4800.jpg                 # Hero profile picture
+│   ├── profile.jpg                  # Hero profile picture (800×800)
 │   ├── updated_cv_content.md        # CV reference content
 │   └── updated_github_profile_info.md
 ├── index.html                       # Portfolio page

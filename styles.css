@@ -1400,3 +1400,158 @@ button.contact-item:hover {
 .nowrap {
   white-space: nowrap;
 }
+
+/* ---------- Content additions ---------- */
+.hero__stackline {
+  margin-top: 1.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-3);
+}
+
+.inline-link {
+  color: var(--accent-text);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent);
+  text-underline-offset: 3px;
+}
+.inline-link:hover {
+  text-decoration-color: currentColor;
+}
+.inline-link i {
+  font-size: 0.7em;
+}
+
+.section__lead code {
+  padding: 0.1em 0.4em;
+  border-radius: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--text);
+}
+
+.section--flush-top {
+  padding-top: 0;
+}
+
+.timeline__group {
+  margin-top: 1.25rem;
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-3);
+}
+.timeline__group + .timeline__points {
+  margin-top: 0.6rem;
+}
+
+.projects__more {
+  margin-top: 1.5rem;
+  font-size: 0.92rem;
+  color: var(--text-3);
+}
+
+.stack {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.stack__row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+.stack__row + .stack__row {
+  border-top: 1px solid var(--border);
+}
+.stack__row dt {
+  font-weight: 600;
+  color: var(--text);
+}
+.stack__row dd {
+  color: var(--text-2);
+}
+@media (max-width: 640px) {
+  .stack__row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    padding: 0.9rem 1.1rem;
+  }
+}
+
+/* Third hero chip (testing background) */
+.float-chip--bl {
+  bottom: 30%;
+  left: -16%;
+  animation-delay: -1.5s;
+}
+.float-chip__icon--sec {
+  background: color-mix(in srgb, var(--success) 14%, transparent);
+  color: var(--success);
+}
+@media (max-width: 1024px) {
+  .float-chip--bl {
+    left: -6%;
+  }
+}
+
+/* ---------- Portrait animation ---------- */
+.portrait-stage {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 400px);
+  perspective: 1000px;
+}
+.portrait-stage::before {
+  content: "";
+  position: absolute;
+  inset: 6%;
+  z-index: -1;
+  border-radius: 40%;
+  background: conic-gradient(from 0deg, var(--accent), var(--accent-2), #a78bfa, var(--accent));
+  filter: blur(48px);
+  opacity: 0.38;
+  animation: glow-spin 14s linear infinite;
+}
+@keyframes glow-spin {
+  to { transform: rotate(1turn); }
+}
+.portrait {
+  width: 100%;
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition: transform 0.5s var(--ease), box-shadow 0.4s;
+  will-change: transform;
+}
+.portrait::before {
+  display: none;
+}
+.portrait img {
+  transition: transform 0.7s var(--ease);
+}
+.portrait-stage:hover .portrait img {
+  transform: scale(1.02);
+}
+.portrait-stage.is-tilting .portrait {
+  transition: transform 0.12s linear, box-shadow 0.4s;
+}
+@media (max-width: 900px) {
+  .portrait-stage {
+    width: 132px;
+  }
+  .portrait {
+    width: 100%;
+  }
+}
+
+/* Keep the top chip clear of the face */
+.float-chip--tl {
+  top: -6%;
+}

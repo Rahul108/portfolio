@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Aninda Sarker Rahul | Senior Software Engineer</title>
+    <title>Aninda Sarker Rahul | Senior Backend Engineer</title>
     <meta
       name="description"
-      content="Aninda Sarker Rahul - Senior Software Engineer specializing in AI & Agentic Systems, Go, NestJS, Python, Kubernetes & Event-Driven Architecture."
+      content="Aninda Sarker Rahul — Senior Backend Engineer. I fix slow systems and rewrite the ones that can't be fixed. 6+ years, mostly Go and Node.js, mostly fintech and payments. Remote-ready (UTC+6)."
     />
-    <meta property="og:title" content="Aninda Sarker Rahul | Senior Software Engineer" />
-    <meta property="og:description" content="Senior full-stack engineer building scalable microservices, event-driven systems and AI agents." />
-    <meta property="og:image" content="./assets/IMG_4800.jpg" />
+    <meta property="og:title" content="Aninda Sarker Rahul | Senior Backend Engineer" />
+    <meta property="og:description" content="Senior backend engineer. I fix slow systems and rewrite the ones that can't be fixed." />
+    <meta property="og:image" content="./assets/profile.jpg?v=2" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)" />
@@ -34,7 +34,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=6" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -49,11 +49,10 @@
         </a>
 
         <ul class="nav__links" id="nav-links">
-          <li><a class="nav__link" href="#about">About</a></li>
-          <li><a class="nav__link" href="#skills">Skills</a></li>
           <li><a class="nav__link" href="#experience">Experience</a></li>
           <li><a class="nav__link" href="#projects">Projects</a></li>
-          <li><a class="nav__link" href="#blog">Blog</a></li>
+          <li><a class="nav__link" href="#stack">Stack</a></li>
+          <li><a class="nav__link" href="#blog">Writing</a></li>
           <li><a class="nav__link" href="#contact">Contact</a></li>
         </ul>
 
@@ -62,7 +61,7 @@
             <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
             <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
           </button>
-          <a href="#contact" class="btn btn--primary btn--sm nav__cta">Let's talk</a>
+          <a href="#contact" class="btn btn--primary btn--sm nav__cta">Get in touch</a>
           <button
             type="button"
             class="icon-btn nav__toggle"
@@ -83,33 +82,34 @@
           <div class="hero__content" id="about">
             <span class="status-pill reveal">
               <span class="status-pill__dot"></span>
-              Open to remote roles · Dhaka (UTC+6)
+              Remote-ready · UTC+6 · 4–6 hrs overlap with US/EU
             </span>
 
-            <p class="hero__eyebrow reveal">Aninda Sarker Rahul — Senior Software Engineer</p>
+            <p class="hero__eyebrow reveal">Aninda Sarker Rahul — Senior Backend Engineer</p>
 
             <h1 class="hero__title reveal">
-              I build scalable backends &amp; <span class="text-gradient"><span class="nowrap">AI-powered</span> systems</span>.
+              I fix slow systems, <span class="text-gradient">and rewrite the ones that can't be fixed.</span>
             </h1>
 
             <p class="hero__desc reveal">
-              Senior Full-Stack Software Engineer with 7+ years building and scaling microservices for fintech,
-              telecom, and e-commerce. Expert in Go, NestJS, and Python (Django/FastAPI) with production mastery of
-              Kubernetes, event-driven systems, and Redis optimization. Proficient in prompt-first workflows, RAG
-              pipelines, and tool-calling AI agents.
+              I enjoy the hard backend problems, like slow services, production incidents and old code that needs
+              a rewrite. I measure first to see where the time and memory go. Then I fix what I can and rebuild
+              the rest in small steps, while the system stays live. I've done this for six years, mostly in Go and
+              Node.js, on systems with millions of transactions a day. Now I also lead a platform rewrite and
+              mentor the team doing it.
             </p>
 
             <div class="hero__actions reveal">
               <a
-                href="https://drive.google.com/file/d/1zplGe2Z0vNIUF9lbDoCMeJb6Fs-bdYL2/view?usp=sharing"
+                href="https://drive.google.com/file/d/1-0nGLWYU14aGQfqN93FVnw6Re3Ww5cSo/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn btn--primary"
               >
                 <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Resume
               </a>
-              <a href="blog.html" class="btn btn--ghost">
-                <i class="fas fa-pen-nib" aria-hidden="true"></i> Read my blog
+              <a href="#experience" class="btn btn--ghost">
+                See my work <i class="fas fa-arrow-down" aria-hidden="true"></i>
               </a>
               <div class="social-row">
                 <a href="https://github.com/Rahul108" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
@@ -124,23 +124,25 @@
               </div>
             </div>
 
-            <ul class="hero__tags reveal" aria-label="Focus areas">
-              <li><i class="fas fa-brain" aria-hidden="true"></i> AI &amp; Agentic Systems</li>
-              <li><i class="fas fa-chart-line" aria-hidden="true"></i> Scalable Fintech</li>
-              <li><i class="fas fa-network-wired" aria-hidden="true"></i> Microservices &amp; Event-Driven</li>
-            </ul>
+            <p class="hero__stackline reveal">Go · NestJS · MySQL · Redis · RabbitMQ · Kafka/Debezium · Kubernetes</p>
           </div>
 
           <div class="hero__visual reveal">
-            <div class="portrait">
-              <img src="./assets/IMG_4800.jpg" alt="Portrait of Aninda Sarker Rahul" width="600" height="600" />
-              <div class="float-chip float-chip--tl">
-                <span class="float-chip__icon"><i class="fas fa-bolt" aria-hidden="true"></i></span>
-                <span><strong>~80%</strong><small>Redis memory cut</small></span>
-              </div>
-              <div class="float-chip float-chip--br">
-                <span class="float-chip__icon float-chip__icon--alt"><i class="fas fa-code" aria-hidden="true"></i></span>
-                <span><strong>Go · NestJS · Python</strong><small>Daily drivers</small></span>
+            <div class="portrait-stage">
+              <div class="portrait">
+                <img src="./assets/profile.jpg?v=2" alt="Portrait of Aninda Sarker Rahul" width="800" height="800" />
+                <div class="float-chip float-chip--tl">
+                  <span class="float-chip__icon float-chip__icon--sec"><i class="fas fa-shield-halved" aria-hidden="true"></i></span>
+                  <span><strong>Started in QA</strong><small>Test automation &amp; OWASP pen testing, 1+ years</small></span>
+                </div>
+                <div class="float-chip float-chip--br">
+                  <span class="float-chip__icon float-chip__icon--alt"><i class="fas fa-code-branch" aria-hidden="true"></i></span>
+                  <span><strong>Now leading a rewrite</strong><small>PHP → Go &amp; NestJS</small></span>
+                </div>
+                <div class="float-chip float-chip--bl">
+                  <span class="float-chip__icon"><i class="fas fa-briefcase" aria-hidden="true"></i></span>
+                  <span><strong>Built fintech backends</strong><small>Payments &amp; lending, 6+ years</small></span>
+                </div>
               </div>
             </div>
           </div>
@@ -148,72 +150,11 @@
 
         <div class="container">
           <dl class="stats reveal">
-            <div class="stat"><dt>Years shipping</dt><dd>7+</dd></div>
-            <div class="stat"><dt>Daily txns handled</dt><dd>Millions</dd></div>
-            <div class="stat"><dt>Bulk payments / day</dt><dd>20K+</dd></div>
-            <div class="stat"><dt>Hubs on my platform</dt><dd>1,000+</dd></div>
+            <div class="stat"><dt>more traffic on a service I rewrote, from 200 to 600+ requests a second</dt><dd>3×</dd></div>
+            <div class="stat"><dt>less Redis memory on a service with millions of transactions a day</dt><dd>~60%</dd></div>
+            <div class="stat"><dt>to trace the worst production bugs, down from 7–8 hours</dt><dd>&lt;1 hour</dd></div>
+            <div class="stat"><dt>to ship a product change, down from 7–10 days</dt><dd>2 days</dd></div>
           </dl>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section class="section" id="skills">
-        <div class="container">
-          <header class="section__head reveal">
-            <span class="section__kicker">Toolbox</span>
-            <h2 class="section__title">Skills &amp; Technologies</h2>
-            <p class="section__lead">The stack I reach for to design, ship and operate production systems.</p>
-          </header>
-
-          <div class="bento">
-            <article class="bento__card bento__card--wide reveal">
-              <div class="bento__icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
-              <h3>AI &amp; Agentic Systems</h3>
-              <ul class="chips">
-                <li>RAG Pipelines</li><li>Tool-Calling Agents</li><li>Prompt-First Dev</li><li>GitHub Copilot</li><li>Antigravity</li>
-              </ul>
-            </article>
-
-            <article class="bento__card reveal">
-              <div class="bento__icon"><i class="fas fa-code" aria-hidden="true"></i></div>
-              <h3>Languages</h3>
-              <ul class="chips">
-                <li>Go</li><li>TypeScript</li><li>Python</li><li>JavaScript</li><li>PHP</li><li>C++</li>
-              </ul>
-            </article>
-
-            <article class="bento__card reveal">
-              <div class="bento__icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
-              <h3>Frameworks &amp; Runtimes</h3>
-              <ul class="chips">
-                <li>NestJS</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>React</li><li>Next.js</li><li>Fiber</li><li>Chi</li><li>Node.js</li>
-              </ul>
-            </article>
-
-            <article class="bento__card reveal">
-              <div class="bento__icon"><i class="fas fa-database" aria-hidden="true"></i></div>
-              <h3>Data, Caching &amp; Search</h3>
-              <ul class="chips">
-                <li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis (Advanced)</li><li>Elasticsearch</li>
-              </ul>
-            </article>
-
-            <article class="bento__card bento__card--wide reveal">
-              <div class="bento__icon"><i class="fas fa-server" aria-hidden="true"></i></div>
-              <h3>Cloud, DevOps &amp; Messaging</h3>
-              <ul class="chips">
-                <li>Kubernetes (K8s)</li><li>Docker</li><li>RabbitMQ</li><li>Debezium</li><li>Kafka</li><li>AWS (EC2, S3, Lambda)</li><li>Terraform</li><li>Ansible</li><li>GitHub Actions / GitLab CI</li>
-              </ul>
-            </article>
-
-            <article class="bento__card bento__card--full reveal">
-              <div class="bento__icon"><i class="fas fa-shield-halved" aria-hidden="true"></i></div>
-              <h3>Quality, Security &amp; Observability</h3>
-              <ul class="chips">
-                <li>TDD</li><li>Grafana &amp; Prometheus</li><li>ELK Stack &amp; Sentry</li><li>OWASP Penetration Testing</li><li>Playwright &amp; Appium</li><li>Postman</li><li>SonarQube</li>
-              </ul>
-            </article>
-          </div>
         </div>
       </section>
 
@@ -221,9 +162,9 @@
       <section class="section section--tinted" id="experience">
         <div class="container">
           <header class="section__head reveal">
-            <span class="section__kicker">Career</span>
-            <h2 class="section__title">Industrial Experience</h2>
-            <p class="section__lead">Seven years across telecom, logistics-commerce and fintech.</p>
+            <span class="section__kicker">Experience</span>
+            <h2 class="section__title">What I've built and fixed</h2>
+            <p class="section__lead">Payments, lending and payout systems. I started in QA and now lead a platform rewrite.</p>
           </header>
 
           <ol class="timeline">
@@ -233,17 +174,29 @@
                 <header class="timeline__head">
                   <div>
                     <h3>Senior Software Engineer <span class="muted">· Optimization Team</span></h3>
-                    <p class="timeline__company">Miaki Media Ltd <span class="muted">(Augmented at Grameenphone)</span></p>
+                    <p class="timeline__company">Miaki Media Ltd <span class="muted">(on assignment at Grameenphone)</span></p>
                   </div>
                   <span class="date-pill date-pill--now">Aug 2024 – Present</span>
                 </header>
+
+                <h4 class="timeline__group">Payment platform rewrite: PHP to Go and NestJS</h4>
                 <ul class="timeline__points">
-                  <li><strong>~80% Redis memory reduction</strong> — optimized high-throughput recharge services handling millions of daily transactions.</li>
-                  <li><strong>CDC ETL &amp; event architecture</strong> — real-time change data capture using Debezium, RabbitMQ, and custom Go pipelines.</li>
-                  <li><strong>System modernization</strong> — migrated legacy PHP microservices to high-performance Go and Node.js with AI-assisted workflows.</li>
+                  <li><strong>Lead the rewrite.</strong> I plan the phases, mentor the team, and work with the delivery team so the business stays on track.</li>
+                  <li><strong>Rewrote the core, recharge and roaming services in Go.</strong> I picked Fiber after testing Gin and Chi. Roaming is live, and core and recharge are close to full rollout. They use about half the resources in load tests.</li>
+                  <li><strong>Rewrote the shared product catalog in NestJS.</strong> It now handles 600+ TPS under 50 ms in production, up from 200+. Product changes take 2 days instead of 7–10.</li>
+                  <li><strong>Added tracing and structured logs to 6 services.</strong> The worst bugs now take under an hour to trace, down from 7–8 hours.</li>
+                  <li><strong>Write the spec and tests first, then build with AI tools.</strong> Features now ship in about half the time, with far fewer validation bugs.</li>
+                </ul>
+
+                <h4 class="timeline__group">Performance &amp; reliability</h4>
+                <ul class="timeline__points">
+                  <li><strong>Cut Redis memory by ~60%</strong> on a recharge service with millions of daily transactions. It now stores shared product IDs instead of a full product copy for every user. Redis stopped running out of memory.</li>
+                  <li><strong>Found the cause of 4 critical bugs</strong> that had been open for 4 months. Load tests on Kubernetes showed it was connection pooling in Redis and the database.</li>
+                  <li><strong>Replaced hourly cron jobs with real-time data streaming (CDC).</strong> I compared Debezium, Flink and Maxwell with the data team, then built the service that uses it for notifications and reconciliation.</li>
+                  <li><strong>Moved payment notifications and refunds to RabbitMQ.</strong> The main API got ~20% faster. Refunds used to time out above ~100 TPS and now handle 600+ in load tests.</li>
                 </ul>
                 <ul class="tags">
-                  <li>Go</li><li>NestJS</li><li>Node.js</li><li>Laravel</li><li>Slim</li><li>Fiber</li><li>MySQL</li><li>Kubernetes</li><li>Docker</li><li>Redis</li><li>RabbitMQ</li><li>Debezium/Kafka</li><li>Grafana</li>
+                  <li>Go (Fiber)</li><li>NestJS</li><li>PHP</li><li>MySQL</li><li>Redis</li><li>RabbitMQ</li><li>Kafka</li><li>Debezium</li><li>Elasticsearch</li><li>Kubernetes</li><li>OpenTelemetry</li>
                 </ul>
               </article>
             </li>
@@ -254,16 +207,19 @@
                 <header class="timeline__head">
                   <div>
                     <h3>Software Engineer</h3>
-                    <p class="timeline__company">ShopUp</p>
+                    <p class="timeline__company">ShopUp <span class="muted">· B2B commerce</span></p>
                   </div>
                   <span class="date-pill">Sep 2022 – Jul 2024</span>
                 </header>
                 <ul class="timeline__points">
-                  <li><strong>Expense platform redesign</strong> — scaled expense management for 45+ business units &amp; 1,000+ hubs (40% fewer bugs, 50% faster).</li>
-                  <li><strong>Bulk payment engine &amp; approvals</strong> — background job module processing 20,000+ bulk transactions daily with dynamic approval flows.</li>
+                  <li><strong>Rebuilt the expense system used by 1,000+ hubs.</strong> It grew from 15 to 45+ business units, and the team running it went from 10 people to 6.</li>
+                  <li><strong>Fixed nightly payout failures</strong> that had caused ~6K failed payments. I measured the damage for management first, then rolled out the fix in stages.</li>
+                  <li><strong>Built an approval engine that runs on config.</strong> Adding a new business unit no longer needs new code.</li>
+                  <li><strong>Built bulk payouts to bank accounts</strong> (20K+ transactions in production). It removed a manual review step and made processing ~3× faster.</li>
+                  <li><strong>Designed the rules for VAT and tax checks.</strong> This closed a way to tamper with amounts, and approved expenses now create tax certificates automatically.</li>
                 </ul>
                 <ul class="tags">
-                  <li>Go</li><li>NestJS</li><li>MySQL</li><li>PostgreSQL</li><li>Docker</li><li>Kubernetes</li><li>Grafana</li><li>Redis</li>
+                  <li>Go</li><li>NestJS</li><li>MySQL</li><li>PostgreSQL</li><li>Redis</li><li>Kubernetes</li>
                 </ul>
               </article>
             </li>
@@ -274,16 +230,18 @@
                 <header class="timeline__head">
                   <div>
                     <h3>Software Engineer</h3>
-                    <p class="timeline__company">Progoti Systems Limited <span class="muted">(TallyKhata)</span></p>
+                    <p class="timeline__company">Progoti Systems <span class="muted">(TallyKhata)</span></p>
                   </div>
                   <span class="date-pill">Dec 2020 – Jul 2022</span>
                 </header>
                 <ul class="timeline__points">
-                  <li><strong>TallyCredit loan platform</strong> — designed the database and backend services for a microcredit loan management system.</li>
-                  <li><strong>Performance &amp; centralized tracing</strong> — custom filter service across 1K+ data points (60% faster) and centralized Sentry error tracing.</li>
+                  <li><strong>Helped design TallyCredit from scratch.</strong> It matched loans from 15 banks to TallyKhata's 4.8M users.</li>
+                  <li><strong>Built the rules that match each bank's loans to the ~400 data points they need.</strong> The product team could add a new bank from a spreadsheet, without developers.</li>
+                  <li><strong>Made search across 1,000+ data points per user ~60% faster.</strong> I replaced slow LIKE queries with hashed columns and moved loose data to MongoDB.</li>
+                  <li><strong>Fixed a formula that offered users the wrong loans.</strong> I listed the affected users first, then shipped a planned fix.</li>
                 </ul>
                 <ul class="tags">
-                  <li>Python (Django, FastAPI)</li><li>Node.js (React)</li><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Docker</li><li>Sentry</li>
+                  <li>Python (Django, FastAPI)</li><li>Node.js</li><li>React</li><li>PostgreSQL</li><li>MongoDB</li>
                 </ul>
               </article>
             </li>
@@ -293,17 +251,14 @@
               <article class="card timeline__card">
                 <header class="timeline__head">
                   <div>
-                    <h3>Software Engineer &amp; QA Engineer</h3>
-                    <p class="timeline__company">CodeMarshal IT Systems Ltd</p>
+                    <h3>Software Engineer <span class="muted">· promoted from QA Engineer</span></h3>
+                    <p class="timeline__company">CodeMarshal IT Systems</p>
                   </div>
                   <span class="date-pill">May 2019 – Nov 2020</span>
                 </header>
                 <ul class="timeline__points">
-                  <li><strong>API development &amp; QA automation</strong> — e-commerce REST APIs; automated Postman/Appium suites wired into CI/CD.</li>
-                  <li><strong>OWASP security</strong> — mobile penetration testing against OWASP security threats.</li>
-                </ul>
-                <ul class="tags">
-                  <li>Python</li><li>Django</li><li>React</li><li>Next.js</li><li>PostgreSQL</li><li>Postman</li><li>Appium</li><li>MARA Framework</li><li>OWASP Security</li><li>GitLab CI/CD</li>
+                  <li><strong>Built REST APIs</strong> for an e-commerce platform (Django, PostgreSQL, MongoDB).</li>
+                  <li><strong>Before that I was in QA.</strong> I automated API and Android tests in CI, ran load tests and did mobile security testing. That's where I learned to plan for failure and write things down.</li>
                 </ul>
               </article>
             </li>
@@ -315,9 +270,12 @@
                   <div>
                     <h3>B.Sc. in Computer Science and Engineering</h3>
                     <p class="timeline__company">Chittagong University of Engineering and Technology (CUET)</p>
-                    <p class="muted small"><i class="fas fa-location-dot" aria-hidden="true"></i> Chittagong, Bangladesh</p>
+                    <p class="muted small">
+                      Also: Mastering DevOps certificate, Ostad ·
+                      <a class="inline-link" href="https://drive.google.com/file/d/1OYh5zVAFOZsCk3yLEkH9cH0j6q_821nA/view?usp=sharing" target="_blank" rel="noopener noreferrer">view</a>
+                    </p>
                   </div>
-                  <span class="date-pill">Mar 2014 – Mar 2019</span>
+                  <span class="date-pill">2014 – 2019</span>
                 </header>
               </article>
             </li>
@@ -328,164 +286,122 @@
       <!-- Projects -->
       <section class="section" id="projects">
         <div class="container">
-          <header class="section__head section__head--row reveal">
-            <div>
-              <span class="section__kicker">Work</span>
-              <h2 class="section__title">Featured Projects</h2>
-            </div>
-            <div class="segmented" role="tablist" aria-label="Filter projects">
-              <button type="button" role="tab" class="segmented__btn is-active" aria-selected="true" data-filter="all">All</button>
-              <button type="button" role="tab" class="segmented__btn" aria-selected="false" data-filter="work">Production</button>
-              <button type="button" role="tab" class="segmented__btn" aria-selected="false" data-filter="oss">Open source</button>
-              <button type="button" role="tab" class="segmented__btn" aria-selected="false" data-filter="early">Early work</button>
-            </div>
+          <header class="section__head reveal">
+            <span class="section__kicker">Side projects</span>
+            <h2 class="section__title">What I build outside work</h2>
+            <p class="section__lead">Things I build in my own time to try ideas before I need them at work. Each one runs with <code>docker compose up</code>.</p>
           </header>
 
           <div class="projects">
-            <article class="card project project--featured reveal" data-cat="work">
+            <article class="card project project--featured reveal">
               <div class="project__top">
-                <span class="project__label">Grameenphone</span>
-              </div>
-              <h3>High-Throughput Recharge &amp; Refund System</h3>
-              <p>Scalable event-driven microservices handling millions of daily transactions at Grameenphone. Achieved ~80% Redis memory optimization and CDC with Debezium &amp; RabbitMQ.</p>
-              <ul class="tags"><li>Go</li><li>NestJS</li><li>Redis</li><li>RabbitMQ</li><li>Debezium</li><li>K8s</li></ul>
-            </article>
-
-            <article class="card project project--featured reveal" data-cat="work">
-              <div class="project__top">
-                <span class="project__label">ShopUp</span>
-              </div>
-              <h3>Configurable Expense &amp; Tax Management</h3>
-              <p>Enterprise expense platform for 45+ business units and 1,000+ hubs at ShopUp. Reduced system bugs by 40%, boosted performance 50%, and bulk-processed 20K daily payment batches.</p>
-              <ul class="tags"><li>Go</li><li>NestJS</li><li>PostgreSQL</li><li>MySQL</li><li>Kubernetes</li></ul>
-            </article>
-
-            <article class="card project reveal" data-cat="oss">
-              <div class="project__top">
-                <span class="project__label">Open source</span>
+                <span class="project__label">Payments</span>
                 <div class="project__links">
-                  <a href="https://github.com/Rahul108/debezium-rabbitmq-cdc" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="debezium-rabbitmq-cdc source code"><i class="fab fa-github" aria-hidden="true"></i></a>
+                  <a href="https://github.com/Rahul108/Paylane" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="Paylane on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <h3>Paylane</h3>
+              <p>A payment system with 6 services. It runs recharge, cashback, subscription and one-click payments against mock bKash and card gateways. It has a payment state machine, a double-entry ledger and encrypted calls between services.</p>
+              <ul class="tags"><li>Go</li><li>MySQL</li><li>Redis</li><li>Next.js</li></ul>
+            </article>
+
+            <article class="card project project--featured reveal">
+              <div class="project__top">
+                <span class="project__label">Platform</span>
+                <div class="project__links">
+                  <a href="https://github.com/Rahul108/calc-versa" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="CalcVersa on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <h3>CalcVersa</h3>
+              <p>Lets each account build its own calculators and trackers. A NestJS gateway talks to a Go service that runs the formulas, and to an AI service that drafts new tools from plain English. Every AI-made formula is checked before it runs.</p>
+              <ul class="tags"><li>NestJS</li><li>Go</li><li>RabbitMQ</li><li>PostgreSQL</li><li>Gemini</li></ul>
+            </article>
+
+            <article class="card project reveal">
+              <div class="project__top">
+                <span class="project__label">Data streaming</span>
+                <div class="project__links">
+                  <a href="https://github.com/Rahul108/debezium-rabbitmq-cdc" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="debezium-rabbitmq-cdc on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
               </div>
               <h3>debezium-rabbitmq-cdc</h3>
-              <p>Real-time Change Data Capture (CDC) system streaming MySQL database mutations to RabbitMQ queues via Debezium for event-driven microservices.</p>
-              <ul class="tags"><li>Go</li><li>Debezium</li><li>RabbitMQ</li><li>MySQL</li><li>Docker</li></ul>
+              <p>Streams every MySQL change through Debezium to RabbitMQ. A Go consumer then writes the changes to MongoDB.</p>
+              <ul class="tags"><li>Debezium</li><li>RabbitMQ</li><li>Go</li><li>MySQL</li></ul>
             </article>
 
-            <article class="card project reveal" data-cat="work">
+            <article class="card project reveal">
               <div class="project__top">
-                <span class="project__label">TallyKhata</span>
-              </div>
-              <h3>Microcredit Loan Platform (TallyCredit)</h3>
-              <p>End-to-end loan credit management system with custom filter engine evaluating 1,000+ data points, boosting query performance by 60%.</p>
-              <ul class="tags"><li>Python</li><li>Django</li><li>FastAPI</li><li>React</li><li>PostgreSQL</li></ul>
-            </article>
-
-            <article class="card project reveal" data-cat="oss">
-              <div class="project__top">
-                <span class="project__label">Open source</span>
+                <span class="project__label">Storage</span>
                 <div class="project__links">
-                  <a href="https://github.com/Rahul108/calc-versa" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="calc-versa source code"><i class="fab fa-github" aria-hidden="true"></i></a>
+                  <a href="https://github.com/Rahul108/multi-protocol-file-upload" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="VaultFlow on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
               </div>
-              <h3>calc-versa</h3>
-              <p>Versatile calculation and conversion web tool engineered for fast, modular, and dynamic computations.</p>
-              <ul class="tags"><li>TypeScript</li><li>React</li><li>JavaScript</li></ul>
+              <h3>VaultFlow</h3>
+              <p>Compares four ways to upload files: simple, chunked, resumable (tus) and straight to S3 with pre-signed URLs. Files are served through an Nginx cache.</p>
+              <ul class="tags"><li>Go (Gin)</li><li>tus</li><li>MinIO / S3</li><li>Nginx</li></ul>
             </article>
 
-            <article class="card project reveal" data-cat="oss">
+            <article class="card project reveal">
               <div class="project__top">
-                <span class="project__label">Open source</span>
+                <span class="project__label">Applied AI</span>
                 <div class="project__links">
-                  <a href="https://github.com/Rahul108/remix-redux-tailwind-dnd-motion" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="remix-redux-tailwind-dnd-motion source code"><i class="fab fa-github" aria-hidden="true"></i></a>
+                  <a href="https://github.com/Rahul108/BuildWise" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="BuildWise on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
               </div>
-              <h3>remix-redux-tailwind-dnd-motion</h3>
-              <p>Interactive web app featuring Remix framework, Redux Toolkit state management, Tailwind CSS, drag-and-drop UI, and Framer Motion animations.</p>
-              <ul class="tags"><li>Remix</li><li>React</li><li>Redux Toolkit</li><li>Tailwind CSS</li><li>Framer Motion</li></ul>
+              <h3>BuildWise</h3>
+              <p>A rent and building-cost assistant. The AI only works out what the user wants and calls the right function. All money math is plain Python, never the model. Policy questions are answered from documents (RAG).</p>
+              <ul class="tags"><li>FastAPI</li><li>Tool calling</li><li>FAISS</li><li>React</li></ul>
             </article>
 
-            <article class="card project reveal" data-cat="early">
+            <article class="card project reveal">
               <div class="project__top">
-                <span class="project__label">Side project</span>
+                <span class="project__label">Applied AI</span>
                 <div class="project__links">
-                  <a href="https://github.com/Rahul108/Chill-Xicz-Discord-Bot" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="Chill Xicz Discord Bot source code"><i class="fab fa-github" aria-hidden="true"></i></a>
-                  <a href="https://discord.gg/P86hT2tcb4" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="Chill Xicz Discord server"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                  <a href="https://github.com/Rahul108/mermaid_canvas_ai" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="Mermaid Canvas AI on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
               </div>
-              <h3>Chill Xicz Discord Bot</h3>
-              <p>Automated event notification and community engagement bot for Discord servers with MongoDB state storage.</p>
-              <ul class="tags"><li>discord.py</li><li>MongoDB</li></ul>
-            </article>
-
-            <article class="card project reveal" data-cat="early">
-              <div class="project__top">
-                <span class="project__label">Side project</span>
-                <div class="project__links">
-                  <a href="https://github.com/Rahul108/Mess-Management" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="Mess Management System source code"><i class="fab fa-github" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <h3>Mess Management System</h3>
-              <p>A set of REST APIs to calculate cost per user and overall expense of a mess against custom duration windows (annual, monthly, weekly, or dynamic periods).</p>
-              <ul class="tags"><li>Django REST</li><li>PostgreSQL</li></ul>
-            </article>
-
-            <article class="card project reveal" data-cat="early">
-              <div class="project__top">
-                <span class="project__label">Research</span>
-                <div class="project__links">
-                  <a href="https://github.com/Rahul108/Wormhole_attack_detection_in_wsn" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="Wormhole Attack Detection source code"><i class="fab fa-github" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <h3>Wormhole Attack Detection in WSN</h3>
-              <p>Security research project proposing &amp; simulating detection mechanisms against wormhole attack tunnels in Wireless Sensor Networks.</p>
-              <ul class="tags"><li>NS3</li><li>C++</li></ul>
-            </article>
-
-            <article class="card project reveal" data-cat="early">
-              <div class="project__top">
-                <span class="project__label">Academic</span>
-                <div class="project__links">
-                  <a href="https://github.com/Rahul108/Online-Bookshop" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="Online Bookshop CMS source code"><i class="fab fa-github" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <h3>Online Bookshop CMS</h3>
-              <p>E-commerce platform for listing, selling, and tracking book inventory with custom CMS for dynamic UI updates and stock management.</p>
-              <ul class="tags"><li>Laravel</li><li>MySQL</li></ul>
-            </article>
-
-            <article class="card project reveal" data-cat="early">
-              <div class="project__top">
-                <span class="project__label">Academic</span>
-                <div class="project__links">
-                  <a href="https://github.com/Rahul108/Online-Blood-Bank-Management-System" target="_blank" rel="noopener noreferrer" class="icon-btn icon-btn--sm" aria-label="Online Blood Bank System source code"><i class="fab fa-github" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <h3>Online Blood Bank System</h3>
-              <p>Web application developed for searching and connecting blood donors online quickly and effectively.</p>
-              <ul class="tags"><li>Laravel</li><li>MySQL</li></ul>
-            </article>
-
-            <article class="card project reveal" data-cat="early">
-              <div class="project__top">
-                <span class="project__label">Academic</span>
-              </div>
-              <h3>Hotel Management System</h3>
-              <p>Database management project for handling hotel room bookings, guest billing, and daily service operations.</p>
-              <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li></ul>
+              <h3>Mermaid Canvas AI</h3>
+              <p>Turns a text prompt into a Mermaid diagram. If the diagram doesn't compile, the error goes back to the AI to fix. Traced with OpenTelemetry.</p>
+              <ul class="tags"><li>TypeScript</li><li>Gemini</li><li>OpenTelemetry</li></ul>
             </article>
           </div>
+
+          <p class="projects__more reveal">
+            More experiments, including Temporal workflows, Kafka consumers, JWT rotation and agentic RAG, are on
+            <a class="inline-link" href="https://github.com/Rahul108?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Stack -->
+      <section class="section section--tinted" id="stack">
+        <div class="container">
+          <header class="section__head reveal">
+            <span class="section__kicker">Stack</span>
+            <h2 class="section__title">Tools I use in production</h2>
+          </header>
+
+          <dl class="stack reveal">
+            <div class="stack__row"><dt>Languages</dt><dd>Go, TypeScript, JavaScript, Python, PHP</dd></div>
+            <div class="stack__row"><dt>Backend</dt><dd>Fiber, NestJS, Express, Django, FastAPI, Laravel</dd></div>
+            <div class="stack__row"><dt>Data &amp; search</dt><dd>MySQL, PostgreSQL, MongoDB, Redis, Elasticsearch</dd></div>
+            <div class="stack__row"><dt>Messaging &amp; CDC</dt><dd>RabbitMQ, Kafka, Kafka Connect, Debezium</dd></div>
+            <div class="stack__row"><dt>Infra &amp; CI/CD</dt><dd>Kubernetes, Docker, GitLab CI/CD, GitHub Actions</dd></div>
+            <div class="stack__row"><dt>Observability</dt><dd>OpenTelemetry, Grafana, ELK, Sentry</dd></div>
+            <div class="stack__row"><dt>Testing</dt><dd>Unit &amp; integration, API and load testing, OWASP mobile security testing, Postman</dd></div>
+            <div class="stack__row"><dt>How I work</dt><dd>Measure before changing anything. Migrate in small steps. Plan for failure. Write specs and tests first, then build with AI tools.</dd></div>
+          </dl>
         </div>
       </section>
 
       <!-- Blog -->
-      <section class="section section--tinted" id="blog">
+      <section class="section" id="blog">
         <div class="container">
           <header class="section__head section__head--row reveal">
             <div>
-              <span class="section__kicker">Brain Dump</span>
-              <h2 class="section__title">Latest Writing</h2>
-              <p class="section__lead">Notes on systems, security and what happens under the hood.</p>
+              <span class="section__kicker">Writing</span>
+              <h2 class="section__title">Brain Dump</h2>
+              <p class="section__lead">Notes on security, design patterns and performance.</p>
             </div>
             <a href="blog.html" class="btn btn--ghost">All posts <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           </header>
@@ -498,46 +414,14 @@
         </div>
       </section>
 
-      <!-- Certifications -->
-      <section class="section" id="certifications">
-        <div class="container">
-          <header class="section__head reveal">
-            <span class="section__kicker">Credentials</span>
-            <h2 class="section__title">Certifications</h2>
-          </header>
-
-          <article class="card cert reveal">
-            <div class="cert__badge" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="9" r="6"></circle>
-                <path d="M15.477 11.89 17 21l-5-3-5 3 1.523-9.11"></path>
-              </svg>
-            </div>
-            <div class="cert__body">
-              <h3>Mastering DevOps: From Fundamental to Advanced Practices</h3>
-              <a href="https://ostad.app/" target="_blank" rel="noopener noreferrer" class="cert__issuer">Ostad <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-              <p>Comprehensive certification covering end-to-end DevOps practices, CI/CD pipeline automation, infrastructure provisioning, container orchestration, Kubernetes, and cloud deployment standards.</p>
-            </div>
-            <a
-              href="https://drive.google.com/file/d/1OYh5zVAFOZsCk3yLEkH9cH0j6q_821nA/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn--ghost btn--sm cert__cta"
-            >
-              <i class="fas fa-file-pdf" aria-hidden="true"></i> View certificate
-            </a>
-          </article>
-        </div>
-      </section>
-
       <!-- Contact -->
-      <section class="section" id="contact">
+      <section class="section section--flush-top" id="contact">
         <div class="container">
           <div class="cta reveal">
             <div class="cta__text">
               <span class="section__kicker section__kicker--light">Contact</span>
-              <h2>Let's build something reliable together.</h2>
-              <p>Reach out via email, phone, or find me on social platforms — I usually reply within a day.</p>
+              <h2>Hiring for a team with problems like these?</h2>
+              <p>I'm looking for senior backend roles, remote, with 4–6 hours of overlap with US or EU teams. Most of my depth is in fintech and payments.</p>
               <div class="cta__actions">
                 <button type="button" class="btn btn--light copy-email" data-email="rahul108sk@gmail.com">
                   <i class="fas fa-copy" aria-hidden="true"></i> Copy email
@@ -556,12 +440,6 @@
                 </button>
               </li>
               <li>
-                <a href="tel:+8801710465757" class="contact-item">
-                  <span class="contact-item__icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
-                  <span><small>Mobile</small>+880 1710 465757</span>
-                </a>
-              </li>
-              <li>
                 <a href="https://www.linkedin.com/in/aninda-sarker/" target="_blank" rel="noopener noreferrer" class="contact-item">
                   <span class="contact-item__icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></span>
                   <span><small>LinkedIn</small>in/aninda-sarker</span>
@@ -571,6 +449,12 @@
                 <a href="https://github.com/Rahul108" target="_blank" rel="noopener noreferrer" class="contact-item">
                   <span class="contact-item__icon"><i class="fab fa-github" aria-hidden="true"></i></span>
                   <span><small>GitHub</small>github.com/Rahul108</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+8801710465757" class="contact-item">
+                  <span class="contact-item__icon"><i class="fas fa-phone" aria-hidden="true"></i></span>
+                  <span><small>Phone</small>+880 1710 465757</span>
                 </a>
               </li>
               <li>
@@ -587,7 +471,7 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <p>&copy; <span class="js-year">2026</span> Aninda Sarker Rahul. Built with passion &amp; precision.</p>
+        <p>&copy; <span class="js-year">2026</span> Aninda Sarker Rahul</p>
         <nav class="footer__links" aria-label="Footer">
           <a href="https://github.com/Rahul108" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.linkedin.com/in/aninda-sarker/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -599,7 +483,7 @@
     <button type="button" class="to-top" aria-label="Back to top"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-    <script src="./script.js"></script>
-    <script src="./blog.js"></script>
+    <script src="./script.js?v=5"></script>
+    <script src="./blog.js?v=4"></script>
   </body>
 </html>

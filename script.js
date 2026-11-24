@@ -153,3 +153,29 @@
   // Expose a few helpers for blog.js
   window.Site = { showToast, copyText, observeReveal }
 })()
+
+/* ---------- Portrait tilt (mouse only, respects reduced motion) ---------- */
+;(() => {
+  const stage = document.querySelector('.portrait-stage')
+  const portrait = stage?.querySelector('.portrait')
+  const area = document.querySelector('.hero__visual')
+  if (!stage || !portrait || !area) return
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (!fine || reduce) return
+
+  const MAX = 7 // degrees
+  area.addEventListener('pointermove', (e) => {
+    const r = stage.getBoundingClientRect()
+    const x = (e.clientX - r.left) / r.width - 0.5
+    const y = (e.clientY - r.top) / r.height - 0.5
+    stage.classList.add('is-tilting')
+    portrait.style.setProperty('--ry', `${(x * MAX * 2).toFixed(2)}deg`)
+    portrait.style.setProperty('--rx', `${(-y * MAX * 2).toFixed(2)}deg`)
+  })
+  area.addEventListener('pointerleave', () => {
+    stage.classList.remove('is-tilting')
+    portrait.style.setProperty('--rx', '0deg')
+    portrait.style.setProperty('--ry', '0deg')
+  })
+})()

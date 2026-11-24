@@ -467,7 +467,7 @@
           <a class="post-card__cat" href="blog.html?topic=${encodeURIComponent(meta.categoryKey)}">${esc(meta.category)}</a>
           <h1 class="post__title">${esc(meta.title)}</h1>
           <div class="post__meta">
-            <span class="post__author"><img src="./assets/IMG_4800.jpg" alt="" width="28" height="28" /> Aninda Sarker Rahul</span>
+            <span class="post__author"><img src="./assets/profile.jpg" alt="" width="28" height="28" /> Aninda Sarker Rahul</span>
             ${meta.date ? `<span><i class="far fa-calendar" aria-hidden="true"></i> <time datetime="${esc(meta.date)}">${fmtDate(meta.date)}</time></span>` : ''}
             <span><i class="far fa-clock" aria-hidden="true"></i> ${meta.minutes} min read</span>
             ${meta.lang === 'bn' ? '<span class="post-card__lang">বাংলা</span>' : ''}
